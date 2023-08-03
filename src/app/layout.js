@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${oxygen.variable}`}>
+        <Navbar />
         <main className='app'>
-          <Navbar />
           {children}
-          <Footer />
         </main>
+        <Footer />
       </body>
     </html>
   )

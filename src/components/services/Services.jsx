@@ -1,0 +1,17 @@
+import Header from "./Header";
+import RightSection from "./RightSection";
+import ServiceList from "./ServiceList";
+
+const Services = () => {
+  return (
+    <section className="py-6 sm:px-8">
+      <Header />
+      <div className="grid grid-cols-3 grid-rows-3 my-10 gap-4">
+        <ServiceList />
+        <RightSection />
+      </div>
+    </section>
+  );
+};
+
+export default Services;

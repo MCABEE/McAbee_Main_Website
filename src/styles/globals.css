@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 .app {
-  @apply relative z-10 max-w-7xl mx-auto sm:px-8 px-3;
+  @apply relative max-w-7xl mx-auto sm:px-8 px-3;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
