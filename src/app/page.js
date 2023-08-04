@@ -3,6 +3,8 @@ import InfoSection from "@/components/InfoSection"
 import Announcements from "@/components/announcements/Announcements"
 import Products from "@/components/products/Products"
 import Services from "@/components/services/Services"
+import Contact from "@/components/contact/Contact"
+import Blogs from "@/components/blog/Blogs"
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Announcements />
       <Products />
       <Services />
+      <Contact />
+      <Blogs />
     </>
   )
 }
