@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const navList = toggle ? "top-[100%]" : "top-[-400%]";
+  const navList = toggle ? "top-[100%]" : "top-[-500%]";
 
   return (
     <nav className="flex z-20 border-b-2 border-gray-100 sticky top-0 max-w-7xl mx-auto sm:px-8 px-3 pt-4 sm:h-24 text-sm bg-white items-center justify-between sm:pt-8 pb-2">
@@ -21,7 +21,7 @@ const Navbar = () => {
       </Link>
       <div className="flex items-center gap-4">
         <div
-          className={`${navList} lg:static absolute duration-500 bg-slate-50 lg:bg-white left-0 w-full lg:min-h-fit min-h-[50vh] flex gap-4 items-center uppercase px-3 lg:px-0`}
+          className={`${navList} lg:static absolute duration-500 bg-slate-50 lg:bg-white left-0 w-full lg:min-h-fit min-h-[50vh] flex gap-4 items-center uppercase px-3 py-4 lg:px-0`}
         >
           {/* Desktop Navbar Links */}
           <ul className="text-gray-500 flex flex-col lg:flex-row lg:gap-4 gap-6">

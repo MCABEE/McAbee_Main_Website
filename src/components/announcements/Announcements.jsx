@@ -12,13 +12,13 @@ const Announcements = () => {
           }
         />
         <Announcement
-          image={"/assets/images/img-banner.png"}
+          image={"/assets/images/smart_phone.png"}
           text={
             "Announce a personal assistant app that helps to manage our daily life notes, accounts etc"
           }
         />
         <Announcement
-          image={"/assets/images/img-banner.png"}
+          image={"/assets/images/hybrid-work.png"}
           text={
             "Hybrid working after Covid-19, improved work-life balance, more efficient use of time"
           }

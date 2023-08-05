@@ -11,8 +11,8 @@ const Announcement = ({ text, image }) => {
           src={image}
           alt="cover-image"
           height={40}
-          width={40}
-          className="h-full w-full rounded-md object-cover"
+          width={60}
+          className="h-16 w-28 rounded-md object-cover float-right"
         />
       </div>
     </div>
