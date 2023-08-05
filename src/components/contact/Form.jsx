@@ -19,7 +19,9 @@ const Form = () => {
         </div>
         <div className="col-span-2">
             <label htmlFor="country" className="font-light text-sm">Country</label>
-            <input type="text" name="country" id="country" className="p-2 border border-gray-300 rounded-md w-full" />
+            <select name="country" id="country"  className="p-2 border border-gray-300 rounded-md w-full">
+              <option value=""></option>
+            </select>
         </div>
         <div className="col-span-2">
             <label htmlFor="phone" className="font-light text-sm">Phone [ with country code ]</label>
@@ -27,7 +29,9 @@ const Form = () => {
         </div>
         <div className="col-span-2">
             <label htmlFor="service" className="font-light text-sm">Select service</label>
-            <input type="text" name="service" id="service" className="p-2 border border-gray-300 rounded-md w-full" />
+            <select name="service" id="service"  className="p-2 border border-gray-300 rounded-md w-full">
+              <option value=""></option>
+            </select>
         </div>
         <button className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase">Submit</button>
       </form>

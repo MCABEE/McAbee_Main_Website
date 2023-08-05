@@ -1,12 +1,11 @@
 import Image from "next/image";
 import OpeningsCard from "./OpeningsCard";
+import SectionHeading from "../SectionHeading";
 
 const Career = () => {
   return (
     <section className="sm:px-8 py-8">
-      <button className="px-5 py-2.5 uppercase rounded-md bg-app-blue text-white font-semibold text-sm">
-        Career
-      </button>
+      <SectionHeading text={"Career"} />
       <h1 className="text-2xl mt-3 md:text-3xl font-bold text-app-blue">
         Life at <span className="text-black">Mcabee.</span>
       </h1>

@@ -1,11 +1,10 @@
+import SectionHeading from "../SectionHeading";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
   return (
-    <section className="py-8 sm:px-8">
-      <button className="px-5 py-2.5 uppercase rounded-md bg-app-blue text-white font-semibold text-sm">
-        Products
-      </button>
+    <section className="py-6 sm:px-8">
+      <SectionHeading text={"Products"} />
       <div className="flex justify-between mt-3">
         <h1 className="text-2xl md:text-3xl font-bold text-app-blue">
           Products from <span className="text-black">Mcabee.</span>

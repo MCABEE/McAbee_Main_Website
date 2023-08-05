@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { BiSolidPhoneCall, BiLogoWhatsapp } from "react-icons/bi";
 const InfoSection = () => {
   return (
     <section className="py-12 sm:px-8">
@@ -39,22 +39,12 @@ const InfoSection = () => {
           </p>
         </div>
         {/* Phone */}
-        <div className="h-14 hidden w-14 md:flex items-center justify-center rounded-full bg-app-blue">
-          <Image
-            src={"/assets/icons/icon-calling.svg"}
-            alt="phone_icon"
-            width={25}
-            height={25}
-          />
+        <div className="h-14 hidden w-14 md:flex items-center text-white text-3xl justify-center rounded-full bg-app-blue">
+          <BiSolidPhoneCall />
         </div>
         {/* WhatsApp */}
-        <div className="h-14 w-14 hidden md:flex items-center justify-center rounded-full bg-app-blue">
-          <Image
-            src={"/assets/icons/icon-whatsapp.svg"}
-            alt="whatsapp_icon"
-            width={25}
-            height={25}
-          />
+        <div className="h-14 w-14 hidden md:flex items-center justify-center rounded-full  text-white text-3xl bg-app-blue">
+          <BiLogoWhatsapp />
         </div>
         {/* Message */}
         <div className="h-14 w-14 hover:scale-125 transition-all hidden  md:flex items-center justify-center rounded-full bg-app-blue">

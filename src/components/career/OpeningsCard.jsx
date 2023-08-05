@@ -15,7 +15,7 @@ const OpeningsCard = ({ image, position, description, number }) => {
         <p className="sm:text-sm text-xs">{description}</p>
         <p className="sm:font-bold font-semibold text-xs mt-1">{number} Openings</p>
       </div>
-      <button>
+      <button className="hover:translate-x-1 transition-all">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

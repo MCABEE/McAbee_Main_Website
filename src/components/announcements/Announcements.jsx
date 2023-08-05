@@ -1,12 +1,10 @@
 import Announcement from "./Announcement";
-
+import SectionHeading from "../SectionHeading";
 const Announcements = () => {
   return (
     <section className="py-6 sm:px-8">
-      <button className="px-5 py-2.5 uppercase rounded-md bg-app-blue text-white font-semibold text-sm">
-        Whats New
-      </button>
-      <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide py-8">
+      <SectionHeading text={"Whats new"} />
+      <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide pt-8 pb-4">
         <Announcement
           image={"/assets/images/img-banner.png"}
           text={
