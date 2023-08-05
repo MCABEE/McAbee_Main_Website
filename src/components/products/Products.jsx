@@ -23,14 +23,14 @@ const Products = () => {
           }
         />
         <ProductCard
-          heading={"Firstlook"}
+          heading={"NOTEPAD"}
           image={"/assets/images/business-meeting.png"}
           text={
             "A social app that exclusively for singles, who are searching for a life partner or relationship. Currently it's available for Indian citizen's globally."
           }
         />
         <ProductCard
-          heading={"Firstlook"}
+          heading={"PROJECT III"}
           image={"/assets/images/img-banner.png"}
           text={
             "A social app that exclusively for singles, who are searching for a life partner or relationship. Currently it's available for Indian citizen's globally."

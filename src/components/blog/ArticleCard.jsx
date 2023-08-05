@@ -11,8 +11,8 @@ const ArticleCard = ({ image, heading, text, date }) => {
           className="w-full h-[200px] object-cover rounded-md"
         />
       </div>
-      <div>
-        <h3 className="text-xl font-semibold uppercase">{heading}</h3>
+      <div className="">
+        <h3 className="text-xl font-semibold">{heading}</h3>
         <p className="text-sm">{text}</p>
         <p className="text-xs mt-2">{date}</p>
       </div>
