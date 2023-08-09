@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -12,4 +12,8 @@ html{
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.section {
+  @apply sm:pt-12 pt-8 pb-4 sm:px-8;
 }

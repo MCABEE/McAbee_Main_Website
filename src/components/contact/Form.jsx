@@ -1,7 +1,7 @@
 const Form = () => {
   return (
-    <div className="lg:absolute lg:top-20 lg:right-20 max-w-[450px] bg-white rounded-lg sm:p-8 p-5">
-      <h1 className="uppercase font-bold sm:text-base md:text-xl text-center mt-8">
+    <div className="lg:absolute lg:top-20 lg:right-20 max-w-[450px] bg-white rounded-lg sm:px-8 sm:py-12 px-5 py-8">
+      <h1 className="uppercase font-bold sm:text-lg md:text-xl text-center">
         SCHEDULE YOUR CONSULTATION
       </h1>
       <form action="" className="grid grid-cols-2 gap-4 w-full mt-6">
@@ -33,7 +33,7 @@ const Form = () => {
               <option value=""></option>
             </select>
         </div>
-        <button className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase">Submit</button>
+        <button className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase transition-all hover:scale-95">Submit</button>
       </form>
     </div>
   );

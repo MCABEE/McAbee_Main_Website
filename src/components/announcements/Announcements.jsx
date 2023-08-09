@@ -2,11 +2,11 @@ import Announcement from "./Announcement";
 import SectionHeading from "../SectionHeading";
 const Announcements = () => {
   return (
-    <section className="py-6 sm:px-8">
+    <section className="pt-14 pb-6 sm:px-8">
       <SectionHeading text={"Whats new"} />
-      <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide pt-8 pb-4">
+      <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide pt-6 pb-4">
         <Announcement
-          image={"/assets/images/img-banner.png"}
+          image={"/assets/images/firstlook_announcements.png"}
           text={
             "Introducing 'Firstlook' app - the first social network exclusive for singles"
           }

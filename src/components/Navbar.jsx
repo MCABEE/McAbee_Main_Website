@@ -5,27 +5,27 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const navList = toggle ? "top-[100%]" : "top-[-500%]";
+  const navList = toggle ? "top-[100%]" : "top-[-100vh]";
 
   return (
-    <nav className="flex z-20 border-b-2 border-gray-100 sticky top-0 max-w-7xl mx-auto sm:px-8 px-3 pt-4 sm:h-24 text-sm bg-white items-center justify-between sm:pt-8 pb-2">
+    <header className="flex items-center justify-between z-20 border-b-2 border-gray-100 sticky top-0 max-w-7xl mx-auto sm:px-8 px-3 sm:h-24 h-20 text-sm bg-white">
       {/* LOGO */}
       <Link href={"/"}>
         <Image
           src={"/assets/icons/logo_full.svg"}
           alt="McAbee_logo"
-          width={138}
+          width={130}
           height={46}
           className="w-24 h-14 md:w-32 md:h-20"
         />
       </Link>
       <div className="flex items-center gap-4">
-        <div
+        <nav
           className={`${navList} lg:static absolute duration-500 bg-slate-50 lg:bg-white left-0 w-full lg:min-h-fit min-h-[50vh] flex gap-4 items-center uppercase px-3 py-4 lg:px-0`}
         >
           {/* Desktop Navbar Links */}
           <ul className="text-gray-500 flex flex-col lg:flex-row lg:gap-4 gap-6">
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Solutions
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Products
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Company
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Careers
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Blogs
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center gap-1 cursor-pointer">
+            <li className="flex tracking-wide items-center gap-1 cursor-pointer">
               Employee Login
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,10 +128,10 @@ const Navbar = () => {
               </svg>
             </li>
           </ul>
-        </div>
+        </nav>
         <Link
           href={"#"}
-          className="px-6 py-2 rounded-md text-white font-semibold uppercase bg-blue-500"
+          className="px-6 py-2 rounded-md text-white font-semibold uppercase bg-blue-500 transition-all hover:scale-95"
         >
           Contact
         </Link>
@@ -170,7 +170,7 @@ const Navbar = () => {
           )}
         </button>
       </div>
-    </nav>
+    </header>
   );
 };
 

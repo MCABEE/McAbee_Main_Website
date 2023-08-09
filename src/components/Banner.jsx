@@ -1,38 +1,37 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row lg:justify-between gap-4 py-6 sm:py-16 sm:px-8">
-      <div className="mt-10 flex flex-col gap-10">
-        <h1 className="text-app-blue font-semibold md:text-[56px] max-w-xl leading-none text-[40px] font-oxygen">
-          We digitalize your <span className="text-black">business.</span>
-        </h1>
-        <p className="text-2xl font-oxygen">
-          You focus on scale up ! <br /> watch the on-demand webinar.
-        </p>
+    <section className="py-6 sm:py-16 sm:px-8">
+      <div className="flex flex-col-reverse lg:flex-row lg:justify-between gap-4 ">
+        <div className="flex flex-col justify-center gap-6 md:gap-10">
+          <h1 className="text-app-blue font-semibold md:text-[56px] max-w-xl leading-none text-[40px] font-oxygen">
+            We digitalize your <span className="text-black">business.</span>
+          </h1>
+          <p className="text-2xl font-oxygen">
+            You focus on scale up ! <br /> watch the on-demand webinar.
+          </p>
+        </div>
         <div>
-          <Link
-            href={"#"}
-            className="uppercase px-5 py-2.5  text-sm bg-app-blue text-white rounded-md font-semibold"
-          >
-            Explore Services
-          </Link>
-          <Link
-            href={"#"}
-            className="uppercase px-5 ml-4 py-2.5 text-sm text-app-blue border border-slate-300 rounded-md font-semibold"
-          >
-            Contact Sales
-          </Link>
+          <Image
+            src={"/assets/images/img-banner.png"}
+            alt="Banner_image"
+            width={600}
+            height={330}
+          />
         </div>
       </div>
-      <div>
-        <Image
-          src={"/assets/images/img-banner.png"}
-          alt="Banner_image"
-          width={600}
-          height={330}
-        />
+      <div className="lg:my-2 mt-8">
+        <button
+          className="uppercase px-5 py-2.5  text-sm bg-app-blue text-white rounded-md font-semibold transition-all hover:scale-95"
+        >
+          Explore Services
+        </button>
+        <button
+          className="uppercase px-5 ml-4 py-2.5 text-sm text-app-blue border border-slate-300 rounded-md font-semibold transition-all hover:scale-95"
+        >
+          Contact Sales
+        </button>
       </div>
     </section>
   );

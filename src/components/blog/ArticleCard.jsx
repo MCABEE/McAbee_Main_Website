@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 const ArticleCard = ({ image, heading, text, date }) => {
   return (
     <div className="w-[350px] flex flex-col shrink-0 gap-2">
-      <div>
+      <Link href={"#"}>
         <Image
           src={image}
           alt="cover-image"
@@ -10,9 +11,9 @@ const ArticleCard = ({ image, heading, text, date }) => {
           height={100}
           className="w-full h-[200px] object-cover rounded-md"
         />
-      </div>
+      </Link>
       <div className="">
-        <h3 className="text-xl font-semibold">{heading}</h3>
+        <Link href={"#"} className="text-xl font-semibold">{heading}</Link>
         <p className="text-sm">{text}</p>
         <p className="text-xs mt-2">{date}</p>
       </div>

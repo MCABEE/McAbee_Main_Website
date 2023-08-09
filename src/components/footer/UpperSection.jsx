@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { BsLinkedin, BsFacebook, BsTwitter } from "react-icons/bs";
-import { BiLogoInstagramAlt } from "react-icons/bi";
+import { BsLinkedin } from "react-icons/bs";
+import Image from "next/image";
 
 const UpperSection = () => {
   return (
@@ -20,7 +20,7 @@ const UpperSection = () => {
           data for the purposes specified in the{" "}
           <span className="text-app-blue font-semibold">Privacy Policy.</span>
         </p>
-        <button className="bg-app-blue text-white px-5 py-2.5 rounded-md w-[120px] text-sm font-semibold uppercase">
+        <button className="bg-app-blue text-white px-5 py-2.5 rounded-md w-[120px] text-sm font-semibold uppercase transition-all hover:scale-95">
           Send
         </button>
       </div>
@@ -42,7 +42,7 @@ const UpperSection = () => {
           <p>India</p>
         </div>
         <hr />
-        <div className="flex items-center gap-4 justify-between">
+        <div className="flex items-baseline gap-4 justify-between">
           <Link
             href="#"
             className="flex flex-col justify-center items-center text-2xl"
@@ -54,21 +54,30 @@ const UpperSection = () => {
             href="#"
             className="flex flex-col justify-center items-center text-2xl"
           >
-            <BsFacebook />
+            <Image
+              src={"/assets/icons/facebook.svg"}
+              alt="facebook"
+              height={26}
+              width={26}
+            />
             <span className="text-xs">Facebook</span>
           </Link>
-          <Link
-            href="#"
-            className="flex flex-col justify-center items-center text-2xl"
-          >
-            <BsTwitter />
+          <Link href="#" className="flex flex-col justify-center items-center">
+            <Image
+              src={"/assets/icons/twitter.svg"}
+              alt="twitter"
+              height={30}
+              width={28}
+            />
             <span className="text-xs">Twitter</span>
           </Link>
-          <Link
-            href="#"
-            className="flex flex-col justify-center items-center text-2xl"
-          >
-            <BiLogoInstagramAlt />
+          <Link href="#" className="flex flex-col justify-center items-center">
+            <Image
+              src={"/assets/icons/instagram.svg"}
+              alt="Instagram"
+              height={24}
+              width={24}
+            />
             <span className="text-xs">Instagram</span>
           </Link>
         </div>

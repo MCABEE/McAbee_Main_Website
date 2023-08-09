@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const OpeningsCard = ({ image, position, description, number }) => {
   return (
-    <div className="rounded-md max-w-lg sm:w-[500px] bg-[#F4F4F4] p-3 sm:px-6 sm:py-4 flex gap-4 items-center">
+    <Link href={"#"} className="hover:translate-x-1 transition-all rounded-md max-w-lg sm:w-[500px] bg-[#F4F4F4] p-3 sm:px-6 sm:py-4 flex gap-4 items-center">
       <Image
         src={image}
         alt="Smile-image"
@@ -15,7 +16,7 @@ const OpeningsCard = ({ image, position, description, number }) => {
         <p className="sm:text-sm text-xs">{description}</p>
         <p className="sm:font-bold font-semibold text-xs mt-1">{number} Openings</p>
       </div>
-      <button className="hover:translate-x-1 transition-all">
+      <button>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -31,7 +32,7 @@ const OpeningsCard = ({ image, position, description, number }) => {
           />
         </svg>
       </button>
-    </div>
+    </Link>
   );
 };
 
