@@ -5,7 +5,7 @@ const InfoSection = () => {
     <section className="pt-5 sm:py-3 sm:px-8">
       <hr />
       <div className="relative py-4 md:py-2">
-        <div className="flex items-center justify-between gap-10 md:gap-6 overflow-auto scrollbar-hide">
+        <div className="flex items-center justify-between gap-12 md:gap-6 overflow-auto scrollbar-hide">
           {/* Google rating */}
           <div className="flex gap-2 items-center shrink-0">
             <Image
