@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -21,17 +22,19 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="lg:my-2 mt-8">
-        <button
+      <div className="flex gap-x-4 lg:mt-0 mt-8">
+        <Link
+          href="#services"
           className="uppercase px-5 py-2.5  text-sm bg-app-blue text-white rounded-md font-semibold transition-all hover:scale-95"
         >
           Explore Services
-        </button>
-        <button
-          className="uppercase px-5 ml-4 py-2.5 text-sm text-app-blue border border-slate-300 rounded-md font-semibold transition-all hover:scale-95"
+        </Link>
+        <Link
+          href="/contact"
+          className="uppercase px-5 py-2.5 text-sm text-app-blue border border-slate-300 rounded-md font-semibold transition-all hover:scale-95"
         >
           Contact Sales
-        </button>
+        </Link>
       </div>
     </section>
   );

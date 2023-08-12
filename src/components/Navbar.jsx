@@ -130,7 +130,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <Link
-          href={"#"}
+          href={"/contact"}
           className="px-6 py-2 rounded-md text-white font-semibold uppercase bg-blue-500 transition-all hover:scale-95"
         >
           Contact
