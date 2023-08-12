@@ -1,7 +1,7 @@
 import Maintenance from "@/components/maintenance/Maintenance";
 
-const Career = () => {
+const Careers = () => {
   return <Maintenance />;
 };
 
-export default Career;
+export default Careers;

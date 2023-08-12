@@ -18,7 +18,7 @@ const UpperSection = () => {
         <p className="text-sm max-w-md">
           By click &apos;SEND&apos; I give my permission to process my personal
           data for the purposes specified in the{" "}
-          <span className="text-app-blue font-semibold">Privacy Policy.</span>
+          <Link href={'/privacyPolicy'} className="text-app-blue font-semibold">Privacy Policy.</Link>
         </p>
         <button className="bg-app-blue text-white px-5 py-2.5 rounded-md w-[120px] text-sm font-semibold uppercase transition-all hover:scale-95">
           Send
@@ -27,11 +27,11 @@ const UpperSection = () => {
       <div className="col-span-4 lg:col-span-1 flex flex-col gap-5">
         <h2 className="text-md font-medium">Why Mcabee</h2>
         <div className="flex flex-col gap-4 text-sm">
-          <Link href={"#"}>Team</Link>
+          <Link href={"/team"}>Team</Link>
           <Link href={"#"}>Trust and security</Link>
           <Link href={"#"}>Customers and case studies</Link>
           <Link href={"#"}>Company</Link>
-          <Link href={"#"}>Blog</Link>
+          <Link href={"/blogs"}>Blog</Link>
         </div>
       </div>
       <div className="col-span-4 lg:col-span-1 flex flex-col gap-5 justify-between">
@@ -44,7 +44,8 @@ const UpperSection = () => {
         <hr />
         <div className="flex items-baseline gap-4 justify-between">
           <Link
-            href="#"
+            target="_blank"
+            href="https://www.linkedin.com/company/mcabee-technologies/"
             className="flex flex-col justify-center items-center text-2xl"
           >
             <BsLinkedin />

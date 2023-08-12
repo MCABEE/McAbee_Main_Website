@@ -4,7 +4,7 @@ import Link from "next/link";
 const OpeningsCard = ({ image, position, description, number }) => {
   return (
     <Link
-      href={"#"}
+      href={"/careers"}
       className="hover:translate-x-1 transition-all rounded-md max-w-lg sm:w-[500px] bg-[#F4F4F4] p-3 sm:px-6 sm:py-4 flex gap-4 items-center"
     >
       <Image

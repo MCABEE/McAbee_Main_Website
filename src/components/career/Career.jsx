@@ -18,7 +18,7 @@ const Career = () => {
             ideas to contribute to what we do. Which is where you come in.
           </p>
           <Link
-            href={"#"}
+            href={"/careers"}
             className="hover:translate-x-1 transition-all min-w-sm max-w-lg rounded-md bg-[#F4F4F4] p-3 sm:p-4 flex gap-4"
           >
             <Image
@@ -39,12 +39,18 @@ const Career = () => {
             </div>
           </Link>
           <div className="flex flex-wrap gap-4 min-w-sm max-w-lg">
-            <button className="sm:px-5 sm:py-2.5 w-full sm:w-auto px-4 py-2 uppercase rounded-md bg-app-blue text-white font-semibold text-sm transition-all hover:scale-95">
+            <Link
+              href={"/careers"}
+              className="sm:px-5 sm:py-2.5 w-full text-center sm:w-auto px-4 py-2 uppercase rounded-md bg-app-blue text-white font-semibold text-sm transition-all hover:scale-95"
+            >
               Explore all openings
-            </button>
-            <button className="sm:px-5 sm:py-2.5 w-full sm:w-auto px-4 py-2 uppercase rounded-md text-app-blue border border-gray-300 font-semibold text-sm transition-all hover:scale-95">
+            </Link>
+            <Link
+              href={"/careers"}
+              className="sm:px-5 sm:py-2.5 w-full text-center sm:w-auto px-4 py-2 uppercase rounded-md text-app-blue border border-gray-300 font-semibold text-sm transition-all hover:scale-95"
+            >
               Reserve your chair
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-3 lg:items-end mt-8 lg:mt-0">

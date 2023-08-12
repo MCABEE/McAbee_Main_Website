@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SectionHeading from "../SectionHeading";
 import ProductCard from "./ProductCard";
 
@@ -9,9 +10,12 @@ const Products = () => {
         <h1 className="text-2xl md:text-3xl font-bold text-app-blue">
           Products from <span className="text-black">Mcabee.</span>
         </h1>
-        <button className="px-4 py-2 hidden sm:block uppercase rounded-md text-app-blue border border-gray-300 font-semibold  text-xs transition-all hover:scale-95">
+        <Link
+          href={"/products"}
+          className="px-4 py-2 hidden sm:block uppercase rounded-md text-app-blue border border-gray-300 font-semibold  text-xs transition-all hover:scale-95"
+        >
           See all products
-        </button>
+        </Link>
         <div className="sm:hidden flex items-center">
           <button>
             <svg
