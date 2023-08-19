@@ -13,6 +13,7 @@ const InfoSection = () => {
               alt="google_logo"
               width={40}
               height={40}
+              className="h-auto w-auto"
             />
             <div>
               <div className="flex items-center gap-1">
@@ -22,6 +23,7 @@ const InfoSection = () => {
                   alt="rating"
                   width={60}
                   height={20}
+                  className="h-auto w-auto"
                 />
               </div>
               <p className="uppercase text-xs sm:text-sm">User reviews</p>

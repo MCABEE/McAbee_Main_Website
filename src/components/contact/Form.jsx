@@ -2,16 +2,19 @@
 
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Form = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     firstName: "",
     secondName: "",
     company: "",
     country: "",
     phone: "",
     service: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,30 +34,31 @@ const Form = () => {
       !formData.phone ||
       !formData.service
     ) {
-      return alert("Please fill all the fields!");
+      return toast.error("Please fill all the fields!");
     }
 
     const templateParams = {
       ...formData,
     };
-    
+
     try {
-      const message = await emailjs.send(
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
-      console.log(message);
-      alert("Form submitter successfully!");
+      toast.success("Form submitter successfully!");
+      setFormData(initialFormData);
     } catch (error) {
-      alert("something went wrong!");
+      toast.error("something went wrong!");
       console.log(error);
     }
   };
 
   return (
     <div className="lg:absolute lg:top-20 lg:right-20 max-w-[450px] bg-white rounded-lg sm:px-8 sm:py-12 px-5 py-8">
+      <Toaster />
       <h1 className="uppercase font-bold sm:text-lg md:text-xl text-center">
         SCHEDULE YOUR CONSULTATION
       </h1>
@@ -147,7 +151,9 @@ const Form = () => {
             <option value="Mobile Application">Mobile Application</option>
           </select>
         </div>
-        <button className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase transition-all hover:scale-95">
+        <button
+          className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase transition-all hover:scale-95"
+        >
           Submit
         </button>
       </form>
