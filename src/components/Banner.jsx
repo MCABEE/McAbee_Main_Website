@@ -24,7 +24,7 @@ const Banner = () => {
       </div>
       <div className="flex gap-x-4 lg:mt-0 mt-8">
         <Link
-          href="#services"
+          href="/services"
           className="uppercase px-5 py-2.5  text-sm bg-app-blue text-white rounded-md font-semibold transition-all hover:scale-95"
         >
           Explore Services

@@ -7,7 +7,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '700'], varia
 const oxygen = Oxygen({ subsets: ['latin-ext'], weight: ['300', '700'], variable: '--font-oxygen' })
 export const metadata = {
   title: 'MCABEE',
-  description: 'McAbee Tech',
+  description: 'McAbee Technologies',
 }
 
 export default function RootLayout({ children }) {
