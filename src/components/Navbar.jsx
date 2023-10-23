@@ -8,10 +8,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navList = toggle
     ? "top-[120%] right-0 rounded-md shadow-md border"
-    : "top-[120%] right-[-100vw]";
+    : "top-[120%] right-[-120%] border";
 
   return (
-    <header className="flex items-center justify-between z-20 border-b-2 border-gray-100 sticky top-0 max-w-7xl mx-auto sm:px-8 px-3 sm:h-24 h-20 text-sm bg-white">
+    <header className="sticky top-0 flex items-center justify-between z-20 border-b-2 border-gray-100 max-w-7xl mx-auto sm:px-8 px-3 sm:h-24 h-20 text-sm bg-white">
       {/* LOGO */}
       <Link href={"/"}>
         <Image
@@ -22,9 +22,13 @@ const Navbar = () => {
           className="w-24 h-14 md:w-32 md:h-20"
         />
       </Link>
-      <div className="flex items-center relative gap-6">
+      <div
+        className={`${
+          toggle ? "" : "overflow-hidden"
+        } flex items-center gap-6 relative`}
+      >
         <nav
-          className={`${navList} lg:static absolute z-0 duration-500 bg-white w-full lg:min-h-fit min-h-[250px] flex gap-4 items-center uppercase px-3 py-4 lg:px-0 lg:shadow-none lg:border-none`}
+          className={`${navList} lg:static absolute z-0 duration-500 bg-white h-fit w-fit flex gap-4 items-center uppercase px-3 py-4 lg:px-0 lg:shadow-none lg:border-none`}
         >
           {/* Navbar Links */}
           <ul className="text-gray-500 flex flex-col lg:flex-row flex-grow gap-6">
