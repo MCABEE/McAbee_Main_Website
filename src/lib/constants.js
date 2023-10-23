@@ -1,10 +1,9 @@
 export const navLinks = [
-    { id: 1, name: 'Solutions', link: 'solutions' },
-    { id: 2, name: 'Products', link: 'products' },
-    { id: 3, name: 'Careers', link: 'careers' },
-    // { id: 4, name: 'Contact', link: 'contact' },
-    { id: 5, name: 'Blogs', link: 'blogs' },
-    { id: 6, name: 'Employee Login', link: 'employee-login' }
+    { id: 1, name: 'Solutions', link: '/solutions' },
+    { id: 2, name: 'Products', link: '/products' },
+    { id: 3, name: 'Careers', link: '/careers' },
+    { id: 4, name: 'Blogs', link: '/blogs' },
+    { id: 5, name: 'Employee Login', link: '/employee-login' }
 ]
 
 export const services = [

@@ -7,7 +7,7 @@ const BottomSection = () => {
         <Link href="#" className="inline-block text-sm">
           About Mcabee
         </Link>
-        <Link href="privacypolicy" className="inline-block text-sm">
+        <Link href="/privacypolicy" className="inline-block text-sm">
           Privacy
         </Link>
         <Link href="#" className="inline-block text-sm">
