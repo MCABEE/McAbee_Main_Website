@@ -7,7 +7,7 @@ html {
 }
 
 .app {
-  @apply relative max-w-7xl mx-auto sm:px-8 px-3;
+  @apply relative max-w-screen-xl mx-auto sm:px-8 px-3;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

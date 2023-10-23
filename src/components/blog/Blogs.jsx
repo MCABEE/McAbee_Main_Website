@@ -14,7 +14,7 @@ const Blogs = () => {
           href={"/blogs"}
           className="px-4 py-2 hidden sm:block uppercase rounded-md text-app-blue border border-gray-300 font-semibold text-xs transition-all hover:scale-95"
         >
-          See all articles
+          See all blogs
         </Link>
         <div className="sm:hidden flex items-center">
           <button>

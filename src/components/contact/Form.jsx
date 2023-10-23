@@ -12,6 +12,7 @@ const Form = () => {
     country: "",
     phone: "",
     service: "",
+    message: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -32,7 +33,8 @@ const Form = () => {
       !formData.company ||
       !formData.country ||
       !formData.phone ||
-      !formData.service
+      !formData.service ||
+      !formData.message
     ) {
       return toast.error("Please fill all the fields!");
     }
@@ -48,7 +50,7 @@ const Form = () => {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
-      toast.success("Form submitter successfully!");
+      toast.success("Form submitted.");
       setFormData(initialFormData);
     } catch (error) {
       toast.error("something went wrong!");
@@ -57,7 +59,7 @@ const Form = () => {
   };
 
   return (
-    <div className="lg:absolute lg:top-20 lg:right-20 max-w-[450px] bg-white rounded-lg sm:px-8 sm:py-12 px-5 py-8">
+    <div className="lg:absolute lg:top-20 lg:right-20 max-w-[450px] bg-white rounded-lg sm:px-8 sm:py-8 px-5 py-6">
       <Toaster />
       <h1 className="uppercase font-bold sm:text-lg md:text-xl text-center">
         SCHEDULE YOUR CONSULTATION
@@ -65,7 +67,7 @@ const Form = () => {
       <form
         action="POST"
         onSubmit={handleSubmit}
-        className="grid grid-cols-2 gap-4 w-full mt-6"
+        className="grid grid-cols-2 gap-3 w-full mt-6"
       >
         <div className="col-span-1">
           <label htmlFor="firstName" className="font-light text-sm">
@@ -75,7 +77,7 @@ const Form = () => {
             type="text"
             name="firstName"
             id="firstName"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 rounded-md w-full"
             onChange={handleChange}
           />
         </div>
@@ -87,7 +89,7 @@ const Form = () => {
             type="text"
             name="secondName"
             id="secondName"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 rounded-md w-full"
             onChange={handleChange}
           />
         </div>
@@ -99,7 +101,7 @@ const Form = () => {
             type="text"
             name="company"
             id="company"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 rounded-md w-full"
             onChange={handleChange}
           />
         </div>
@@ -110,7 +112,7 @@ const Form = () => {
           <select
             name="country"
             id="country"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 bg-white rounded-md w-full"
             onChange={handleChange}
           >
             <option value="">Select country</option>
@@ -128,7 +130,7 @@ const Form = () => {
             type="number"
             name="phone"
             id="phone"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 rounded-md w-full"
             onChange={handleChange}
           />
         </div>
@@ -139,7 +141,7 @@ const Form = () => {
           <select
             name="service"
             id="service"
-            className="p-2 border border-gray-300 rounded-md w-full"
+            className="p-1.5 border border-gray-300 bg-white rounded-md w-full"
             onChange={handleChange}
           >
             <option value="">Select service</option>
@@ -150,6 +152,18 @@ const Form = () => {
             </option>
             <option value="Mobile Application">Mobile Application</option>
           </select>
+        </div>
+        <div className="col-span-2">
+          <label htmlFor="message" className="font-light text-sm">
+            Message
+          </label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            className="p-1.5 border border-gray-300 rounded-md w-full"
+            onChange={handleChange}
+          />
         </div>
         <button
           className="bg-app-blue text-white font-semibold text-sm px-5 py-2.5 rounded-md uppercase transition-all hover:scale-95"
