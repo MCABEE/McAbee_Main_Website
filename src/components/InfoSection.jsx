@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { BiSolidPhoneCall, BiLogoWhatsapp } from "react-icons/bi";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { HiMail } from "react-icons/hi";
 const InfoSection = () => {
   return (
     <section className="pt-5 sm:py-3 sm:px-8">
@@ -48,7 +49,7 @@ const InfoSection = () => {
           </div>
           {/* WhatsApp */}
           <div className="h-14 w-14 hidden md:flex items-center justify-center rounded-full  text-white text-3xl bg-app-blue cursor-pointer">
-            <BiLogoWhatsapp />
+            <HiMail />
           </div>
           {/* Message */}
           <div className="h-20 w-20 hidden md:flex items-center justify-center rounded-full bg-app-blue cursor-pointer">
@@ -77,7 +78,7 @@ const InfoSection = () => {
         </div>
         {/* WhatsApp */}
         <div className="h-14 w-14 flex items-center justify-center rounded-full  text-white text-3xl bg-app-blue cursor-pointer">
-          <BiLogoWhatsapp />
+          <HiMail />
         </div>
         {/* Message */}
         <div className="h-14 w-14 hover:scale-125 transition-all flex items-center justify-center rounded-full bg-app-blue cursor-pointer">
