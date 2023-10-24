@@ -24,7 +24,7 @@ const RightSection = () => {
             infrastructures and will enable major business processes through
             enhancements to IT.
           </p>
-          <button className="bg-app-blue text-white rounded-md px-4 w-28 h-8 sm:w-40 sm:h-10 font-semibold text-sm uppercase transition-all hover:scale-95">
+          <button className="bg-app-blue text-white rounded-md px-4 py-2 w-28 sm:w-40 font-semibold text-sm uppercase transition-all hover:scale-95">
             More
           </button>
         </div>

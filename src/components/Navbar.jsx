@@ -28,7 +28,7 @@ const Navbar = () => {
         } flex items-center gap-6 relative`}
       >
         <nav
-          className={`${navList} lg:static absolute z-0 duration-500 bg-white h-fit w-fit flex gap-4 items-center uppercase px-3 py-4 lg:px-0 lg:shadow-none lg:border-none`}
+          className={`${navList} lg:static absolute z-0 duration-500 bg-white h-fit lg:w-fit w-40 flex gap-4 items-center uppercase px-3 py-4 lg:px-0 lg:shadow-none lg:border-none`}
         >
           {/* Navbar Links */}
           <ul className="text-gray-500 flex flex-col lg:flex-row flex-grow gap-6">
