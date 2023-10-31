@@ -54,23 +54,23 @@ const Products = () => {
       <div className="py-6 flex gap-6 justify-between overflow-auto scrollbar-hide">
         <ProductCard
           heading={"Firstlook"}
-          image={"/assets/images/firstlook_products.png"}
+          image={"/assets/images/05_Product_01.jpg"}
           text={
-            "A social app that exclusively for singles, who are searching for a life partner or relationship. Currently it's available for Indian citizen's globally."
+            "'Firstlook' app is designed to connect singles around the world. Experience the essence of social media, find your favorites, and forward marriage proposals."
           }
         />
         <ProductCard
           heading={"NOTEPAD"}
-          image={"/assets/images/notepad_products.png"}
+          image={"/assets/images/06_Product_02.jpg"}
           text={
-            "The beta version under pilot trial, expected to launch 2023 Christmas. it is a personal note that helps to manage our daily notes and docs etc"
+            "An app that works like a personal assistant to note down and organize things in your daily life. This is slated for release in 2024."
           }
         />
         <ProductCard
           heading={"PROJECT III"}
-          image={"/assets/images/srt_products.png"}
+          image={"/assets/images/07_Product_03.jpg"}
           text={
-            "An MVP will be launch in 2024, it was a chain of digital shops that allow hassle free shopping with maximum competitive pricing."
+            "A digital platform connecting retail establishments is expected in 2024. We are committed to keeping you well-informed of its progress and developments."
           }
         />
       </div>

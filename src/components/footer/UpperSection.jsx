@@ -18,7 +18,9 @@ const UpperSection = () => {
         <p className="text-sm max-w-md">
           By click &apos;SEND&apos; I give my permission to process my personal
           data for the purposes specified in the{" "}
-          <Link href={'/privacypolicy'} className="text-app-blue font-semibold">Privacy Policy.</Link>
+          <Link href={"/privacypolicy"} className="text-app-blue font-semibold">
+            Privacy Policy.
+          </Link>
         </p>
         <button className="bg-app-blue text-white px-5 py-2.5 rounded-md w-[120px] text-sm font-semibold uppercase transition-all hover:scale-95">
           Send
@@ -28,9 +30,9 @@ const UpperSection = () => {
         <h2 className="text-md font-medium">Why Mcabee</h2>
         <div className="flex flex-col gap-4 text-sm">
           <Link href={"/team"}>Team</Link>
-          <Link href={"#"}>Trust and security</Link>
-          <Link href={"#"}>Customers and case studies</Link>
-          <Link href={"#"}>Company</Link>
+          <Link href={"/maintenance"}>Trust and security</Link>
+          <Link href={"/maintenance"}>Customers and case studies</Link>
+          <Link href={"/company"}>Company</Link>
           <Link href={"/blogs"}>Blog</Link>
         </div>
       </div>
@@ -52,7 +54,8 @@ const UpperSection = () => {
             <span className="text-xs">LinkedIn</span>
           </Link>
           <Link
-            href="#"
+            target="_blank"
+            href="https://www.facebook.com/mcabeetech"
             className="flex flex-col justify-center items-center text-2xl"
           >
             <Image

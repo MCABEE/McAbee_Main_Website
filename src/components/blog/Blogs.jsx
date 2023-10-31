@@ -53,24 +53,24 @@ const Blogs = () => {
       </div>
       <div className="pt-6 flex gap-6 justify-between overflow-auto scrollbar-hide">
         <ArticleCard
-          heading={"Digitalize Business"}
-          image={"/assets/images/digitalize_insights.png"}
+          heading={"Is solo startup success possible?"}
+          image={"/assets/images/09_Blog_01.png"}
           text={
             "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
           }
           date={"01 Aug 2023"}
         />
         <ArticleCard
-          heading={"Positive impact's of AI"}
-          image={"/assets/images/phone-img.png"}
+          heading={"Generative AI - The Future"}
+          image={"/assets/images/10_Blog_02.jpg"}
           text={
             "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
           }
           date={"03 Aug 2023"}
         />
         <ArticleCard
-          heading={"ChatGPT vs Bard"}
-          image={"/assets/images/gpt-vs-bard.png"}
+          heading={"Datafication and its importance"}
+          image={"/assets/images/11_Blog_03.jpg"}
           text={
             "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
           }

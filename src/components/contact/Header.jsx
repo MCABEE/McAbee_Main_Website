@@ -5,7 +5,7 @@ const Header = () => {
         Contact us
       </button>
       <h1 className="font-oxygen font-bold leading-tight lg:max-w-lg text-white text-3xl md:leading-tight md:text-5xl mt-8 lg:mb-12 mb-8">
-        Partner with Us for <br /> Comprehensive Business Services
+        Be our partner for <br /> a comprehensive business service
       </h1>
     </div>
   );

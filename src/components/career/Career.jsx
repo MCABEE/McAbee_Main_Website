@@ -14,15 +14,16 @@ const Career = () => {
       <div className="grid grid-cols-2 gap-4 justify-between">
         <div className="col-span-2 lg:col-span-1 pt-8 flex flex-col justify-between gap-6">
           <p className="max-w-xl sm:text-sm">
-            We&apos;re always looking for a diverse range of people, talents and
-            ideas to contribute to what we do. Which is where you come in.
+            We are always looking for a diverse range of talented people with
+            innovative ideas, who can contribute to what we do. Maybe all along,
+            it was you...
           </p>
           <Link
             href={"/careers"}
             className="hover:translate-x-1 transition-all min-w-sm max-w-lg rounded-md bg-[#F4F4F4] p-3 sm:p-4 flex gap-4"
           >
             <Image
-              src={"/assets/images/career-smile.png"}
+              src={"/assets/images/12_Career_life_at_mcabee.jpg"}
               alt="Smile-image"
               height={60}
               width={120}
@@ -34,7 +35,7 @@ const Career = () => {
                 principles.
               </p>
               <p className="sm:text-sm text-xs">
-                When you join MCABEE, you&apos;ll discover it&apos;s..
+                When you join Mcabee, you will know...
               </p>
             </div>
           </Link>
@@ -55,21 +56,21 @@ const Career = () => {
         </div>
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-3 lg:items-end mt-8 lg:mt-0">
           <OpeningsCard
-            image={"/assets/images/flutter-openings.png"}
+            image={"/assets/images/13_Job_Flutter.png"}
             position={"Flutter Developer"}
-            description={"Build highly scalable apps using Flutter they.."}
+            description={"Build highly scalable apps using flutter and..."}
             number={"01"}
           />
           <OpeningsCard
-            image={"/assets/images/openings-network.png"}
-            position={"Network Architect"}
-            description={"Planning and designing data communication.."}
+            image={"/assets/images/14_Job_Devops_Network.jpg"}
+            position={"DevOps Engineer"}
+            description={"Planning and designing data communication..."}
             number={"01"}
           />
           <OpeningsCard
-            image={"/assets/images/openings-tester.png"}
+            image={"/assets/images/15_Job_Soft_tester.jpg"}
             position={"Software Tester"}
-            description={"Involved in the QA stage before deployment.."}
+            description={"Involved in the QA stage before deployment..."}
             number={"01"}
           />
         </div>

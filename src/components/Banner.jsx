@@ -10,15 +10,16 @@ const Banner = () => {
             We digitalize your <span className="text-black">business.</span>
           </h1>
           <p className="text-2xl font-oxygen">
-            You focus on scale up ! <br /> watch the on-demand webinar.
+            You keep scaling up, <br /> let us deal with everything else.
           </p>
         </div>
         <div>
           <Image
-            src={"/assets/images/img-banner.png"}
+            src={"/assets/images/01_main_banner.png"}
             alt="Banner_image"
             width={600}
             height={330}
+            className="rounded-lg"
           />
         </div>
       </div>

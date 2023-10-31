@@ -6,21 +6,21 @@ const Announcements = () => {
       <SectionHeading text={"Whats new"} />
       <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide pt-6 pb-4">
         <Announcement
-          image={"/assets/images/firstlook_announcements.png"}
+          image={"/assets/images/02_Whatsnew_Firstlook.png"}
           text={
-            "Introducing 'Firstlook' app - the first social network exclusive for singles"
+            'We are introducing "Firstlook" - an app designed to connect singles around the world.'
           }
         />
         <Announcement
-          image={"/assets/images/smart_phone.png"}
+          image={"/assets/images/03_Whatsnew_Notepad copy.jpg"}
           text={
-            "Announce a personal assistant app that helps to manage our daily life notes, accounts etc"
+            "We are announcing a personal assistant app for 2024 to help you effortless routine organization."
           }
         />
         <Announcement
-          image={"/assets/images/hybrid-work.png"}
+          image={"/assets/images/04_Whatsnew_Hybridwork.jpg"}
           text={
-            "Hybrid working after Covid-19, improved work-life balance, more efficient use of time"
+            "The work-life balance is much better while partially working from home. We still follow it."
           }
         />
       </div>

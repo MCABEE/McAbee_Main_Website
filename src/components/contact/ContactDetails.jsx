@@ -2,8 +2,8 @@ const ContactDetails = () => {
   return (
     <div className="w-full flex flex-col gap-8 py-10 px-3 sm:px-8 bg-[#F4F4F4] rounded-b-lg">
       <p className="md:max-w-lg">
-        We&#39;re happy to answer any questions you may have and help you
-        determine which of our services best fit your needs.
+        We are happy to answer any questions you may have and help you determine
+        which of our services best fit your needs
       </p>
 
       <div className="leading-6">

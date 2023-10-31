@@ -5,7 +5,8 @@ const Header = () => {
         What we do
       </button>
       <h1 className="font-oxygen font-bold leading-tight text-white text-3xl md:leading-tight md:text-5xl my-6">
-        Simplifying Business <br /> for a complex world.
+        {/* Simplifying Business <br /> for a complex world. */}
+        Ensure the ease of business < br /> in a competitive world
       </h1>
     </div>
   );
