@@ -14,6 +14,11 @@ html {
   display: none;
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .section {
   @apply sm:pt-12 pt-8 pb-4 sm:px-8;
 }

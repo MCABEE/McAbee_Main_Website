@@ -10,15 +10,21 @@ const ProductCard = ({ image, heading, text }) => {
           alt="cover-image"
           width={100}
           height={100}
+          unoptimized={true}
           className="w-full h-[200px] object-cover rounded-md"
         />
       </Link>
       <div>
-        <Link href={"/products"} className="text-xl font-semibold uppercase">{heading}</Link>
+        <Link href={"/products"} className="text-xl font-semibold uppercase">
+          {heading}
+        </Link>
         <p className="text-sm">{text}</p>
       </div>
       <div>
-        <Link href={"/products"} className="text-app-blue text-sm font-semibold">
+        <Link
+          href={"/products"}
+          className="text-app-blue text-sm font-semibold"
+        >
           Read the case study
         </Link>
       </div>

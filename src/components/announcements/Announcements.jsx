@@ -6,13 +6,13 @@ const Announcements = () => {
       <SectionHeading text={"Whats new"} />
       <div className="flex flex-nowrap justify-between gap-3 overflow-auto scrollbar-hide pt-6 pb-4">
         <Announcement
-          image={"/assets/images/02_Whatsnew_Firstlook.png"}
+          image={"/assets/images/02_Whatsnew_Firstlook.jpg"}
           text={
             'We are introducing "Firstlook" - an app designed to connect singles around the world.'
           }
         />
         <Announcement
-          image={"/assets/images/03_Whatsnew_Notepad copy.jpg"}
+          image={"/assets/images/03_Whatsnew_Notepad.jpg"}
           text={
             "We are announcing a personal assistant app for 2024 to help you effortless routine organization."
           }

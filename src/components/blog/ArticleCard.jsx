@@ -9,11 +9,14 @@ const ArticleCard = ({ image, heading, text, date }) => {
           alt="cover-image"
           width={100}
           height={100}
+          unoptimized={true}
           className="w-full h-[200px] object-cover rounded-md"
         />
       </Link>
       <div className="">
-        <Link href={"/blogs"} className="text-xl font-semibold">{heading}</Link>
+        <Link href={"/blogs"} className="text-xl font-semibold">
+          {heading}
+        </Link>
         <p className="text-sm">{text}</p>
         <p className="text-xs mt-2">{date}</p>
       </div>

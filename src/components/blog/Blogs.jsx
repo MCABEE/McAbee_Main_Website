@@ -56,7 +56,7 @@ const Blogs = () => {
           heading={"Is solo startup success possible?"}
           image={"/assets/images/09_Blog_01.png"}
           text={
-            "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
+            "Achieving solo startup success demands the right idea, dedication, skills, and a commitment to continuous learning in entrepreneurship today."
           }
           date={"01 Aug 2023"}
         />
@@ -64,7 +64,7 @@ const Blogs = () => {
           heading={"Generative AI - The Future"}
           image={"/assets/images/10_Blog_02.jpg"}
           text={
-            "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
+            "Unleashing innovation and creativity through advanced neural networks, reshaping industries and redefining possibilities."
           }
           date={"03 Aug 2023"}
         />
@@ -72,7 +72,7 @@ const Blogs = () => {
           heading={"Datafication and its importance"}
           image={"/assets/images/11_Blog_03.jpg"}
           text={
-            "A social app that exclusively for bachelors, who are searching for a life partner or relationship."
+            "Datafication transforms unstructured, incomprehensible information into useful insights. It allows you to gain insights into your processes and procedures."
           }
           date={"05 Aug 2023"}
         />

@@ -15,10 +15,11 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            src={"/assets/images/01_main_banner.png"}
+            src={"/assets/images/01_main_banner.jpg"}
             alt="Banner_image"
             width={600}
             height={330}
+            priority
             className="rounded-lg"
           />
         </div>
