@@ -10,6 +10,7 @@ const RightSection = () => {
           alt="Meeting_image"
           width={300}
           height={300}
+          unoptimized={true}
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
