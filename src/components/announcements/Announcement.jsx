@@ -12,6 +12,7 @@ const Announcement = ({ text, image }) => {
           alt="cover-image"
           height={40}
           width={55}
+          unoptimized={true}
           className="h-16 w-24 rounded-md object-cover float-right"
         />
       </div>

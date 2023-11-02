@@ -25,13 +25,13 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? "" : "overflow-hidden"
-        } flex items-center gap-6 relative`}
+        } flex items-center gap-6 lg:gap-8 relative`}
       >
         <nav
           className={`${navList} lg:static absolute z-0 duration-500 bg-white h-fit lg:w-fit w-40 flex gap-4 items-center uppercase px-3 py-4 lg:px-0 lg:shadow-none lg:border-none`}
         >
           {/* Navbar Links */}
-          <ul className="text-gray-500 flex flex-col lg:flex-row flex-grow gap-6">
+          <ul className="text-gray-500 flex flex-col lg:flex-row flex-grow gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <li key={link.id} className="cursor-pointer hover:text-app-blue">
                 <Link href={link.link}>{link.name}</Link>
