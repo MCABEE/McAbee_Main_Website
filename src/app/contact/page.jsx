@@ -1,11 +1,9 @@
 import Contact from "@/components/contact/Contact";
 
-const ContactPage = () => {
+export default function Page() {
   return (
     <div className="mt-6">
       <Contact />
     </div>
   );
-};
-
-export default ContactPage;
+}

@@ -14,8 +14,8 @@ const oxygen = Oxygen({
   variable: "--font-oxygen",
 });
 export const metadata = {
-  title: "MCABEE",
-  description: "Mcabee Technologies",
+  title: "MCABEE TECHNOLOGIES",
+  description: "Mcabee Technologies is a technology consulting firm. We help businesses leverage technology to achieve their goals and improve their operations.",
   icons: {
     icon: "/icon.png",
   },

@@ -1,5 +1,5 @@
 import Maintenance from "@/components/maintenance/Maintenance";
 
-export default function Company() {
+export default function Page() {
   return <Maintenance />;
 }

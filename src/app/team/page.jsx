@@ -1,7 +1,5 @@
 import Maintenance from "@/components/maintenance/Maintenance";
 
-const Team = () => {
+export default function Page() {
   return <Maintenance />;
-};
-
-export default Team;
+}

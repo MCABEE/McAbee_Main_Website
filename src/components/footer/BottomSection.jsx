@@ -15,7 +15,7 @@ const BottomSection = () => {
         </Link>
       </div>
       <div className="">
-        <p className="text-sm">Copyright MCABEE 2023</p>
+        <p className="text-sm"> © MCABEE 2024</p>
       </div>
     </div>
   );

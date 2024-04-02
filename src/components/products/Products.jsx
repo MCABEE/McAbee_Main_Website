@@ -67,7 +67,7 @@ const Products = () => {
           }
         />
         <ProductCard
-          heading={"PROJECT III"}
+          heading={"STREET"}
           image={"/assets/images/07_Product_03.jpg"}
           text={
             "A digital platform connecting retail establishments is expected in 2024. We are committed to keeping you well-informed of its progress and developments."

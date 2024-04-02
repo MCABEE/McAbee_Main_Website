@@ -1,7 +1,5 @@
 import Maintenance from "@/components/maintenance/Maintenance";
 
-const solutions = () => {
+export default function Page() {
     return <Maintenance />;
 }
-
-export default solutions;

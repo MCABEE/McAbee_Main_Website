@@ -1,7 +1,5 @@
 import Maintenance from "@/components/maintenance/Maintenance";
 
-const BlogPage = () => {
+export default function Page() {
   return <Maintenance />;
-};
-
-export default BlogPage;
+}
