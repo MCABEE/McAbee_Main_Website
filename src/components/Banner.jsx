@@ -19,7 +19,7 @@ const Banner = () => {
             alt="Banner_image"
             width={600}
             height={330}
-            priority
+            priority={true}
             className="rounded-lg"
           />
         </div>

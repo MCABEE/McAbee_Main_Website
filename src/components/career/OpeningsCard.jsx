@@ -12,8 +12,7 @@ const OpeningsCard = ({ image, position, description, number }) => {
         alt="Smile-image"
         height={60}
         width={100}
-        objectFit="cover"
-        className="rounded-md"
+        className="rounded-md object-cover"
       />
       <div className="">
         <h3 className="font-bold sm:text-lg text-md text-app-blue">
